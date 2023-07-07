@@ -36,29 +36,29 @@ prevBtn.style.display = "none";
 
 
 // MODAL
-// let modal = document.getElementById("myModal");
-// let btn = document.getElementById('myBtn');
-// let span = document.getElementsByClassName("close")[0];
+let modal = document.getElementById("myModal");
+let btn = document.getElementById('myBtn');
+let span = document.getElementsByClassName("close")[0];
 
 
-// btn.onclick = function() {
-// 	modal.style.display = "block";
-// }
-// span.onclick = function() {
-// 	modal.style.display = "none";
-// }
-// window.onclick = function(event) {
-// 	if (event.target == modal) {
-// 		modal.style.display = "none";
-// 	}
-// }
+btn.onclick = function() {
+	modal.style.display = "block";
+}
+span.onclick = function() {
+	modal.style.display = "none";
+}
+window.onclick = function(event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+}
 
-// window.onclick = function(e) {
-//   if (!e.target.matches('.dropbtn')) {
-//   let myDropdown = document.getElementById("myDropdown");
-//     if (myDropdown.classList.contains('show')) {
-//       myDropdown.classList.remove('show');
-//     }
-//   }
-// }
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  let myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
 

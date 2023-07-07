@@ -24,7 +24,7 @@
       <a class="links-nav" class="links-nav" href="#frontend">FrontEnd Mentor</a>
       <a class="links-nav" class="links-nav" href="#codewell">Codewell</a>
       <a class="links-nav" class="links-nav" href="#react">Other</a>
-      <a href="mailto:bclaassen9@gmail.com">Contact</a>
+      <button id="myBtn" class="btn" >Contact</button>
     </nav>
   
   <!-- Main Text -->
@@ -73,6 +73,15 @@
       </div>
       <div class="slide">
         <img src="./images/frontend/Single-page design portfolio.png" alt="Single page design portfolio" class="slide-img">
+      </div>
+      <div class="slide">
+        <img src="./images/frontend/Age calculator app.png" alt="Age calculator app" class="slide-img">
+      </div>
+      <div class="slide">
+        <img src="./images/frontend/GitHub user search app.png" alt="GitHub user search app" class="slide-img">
+      </div>
+      <div class="slide">
+        <img src="./images/frontend/Single-page developer portfolio.png" alt="Single page developer portfolio" class="slide-img">
       </div>
     </div>
     <div class="btn-container">
@@ -219,6 +228,59 @@
           <a href="https://bc464.github.io/eCommerce/" target="_blank"><img 
           src="images/react/eCommerce Shopping Cart.png" 
           alt="eCommerce shopping cart" class="react-img"></a>
+        </div>
+        <div class="api-item">
+          <a href="https://react-minimalist-profile.vercel.app" target="_blank"><img 
+          src="images/react/Minimalist Portfolio.png" 
+          alt="Minimalist Portfolio" class="react-img"></a>
+        </div>
+      </div>
+    </section>
+    <section class="modal-section">
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times</span>
+          <h2>Contact Information</h2>
+        </div>
+        <div class="modal-body">
+          <form id="signupForm" action="https://formsubmit.co/bclaassen9@gmail.co" method="POST">
+            <div class="form-content">
+              <div class="box flex">
+                <label for="name">name</label><br />
+                  <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    placeholder="name"
+                    required
+                    autocomplete="name"
+                      />
+              </div>
+            </div>
+            <div class="box flex">
+              <label for="email">email</label><br />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  autocomplete="email" placeholder="example@example.com"
+                      />
+            </div>
+            <div class="box flex">
+              <div class="message-text">
+                <label for="message">message</label><br />
+                <textarea class="message-text-area" placeholder="message"></textarea>
+              </div>
+            </div>
+            <div class="btn-form">
+              <button type="submit" form="signupForm" class="btn-create btn">
+                  Submit
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
