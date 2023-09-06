@@ -20,8 +20,8 @@
 <body>
   <main class="container-main">
     <nav>
-      <img class="hamburger-icon" src="./images/other/hamburger.png" alt="hamburger icon by Andy Horvath"></img>
-      <img class="close-icon" src="./images/other/close.png" alt="close icon by Chanut"></img>
+      
+
       <div class="nav-content">
       <a class="links-nav" class="links-nav" href="index.html">Home</a>
       <a class="links-nav" class="links-nav" href="frontend.html">FrontEnd Mentor</a>
@@ -29,17 +29,20 @@
       <a class="links-nav" class="links-nav" href="react.html">React</a>
       <button id="myBtn" class="btn" >Contact</button>
     </div>
+    <!-- Mobile Navigation -->
     <div class="mobile-container">
-    <a href="https://www.flaticon.com/free-icons/hamburger" title="Hamburger icons created by Yogs144 - Flaticon"></a>
+      <img src="./images/other/hamburger.png" alt="hamburger-icon" class="mobile-icon hamburger-icon">
+      <img src="./images/other/close.png" alt="hamburger-icon" class="mobile-icon close-icon">
+    
       
       <div class="mobile-content">
-        <a class="links-nav" class="links-nav" href="index.html">Home</a>
-      <a class="links-nav" class="links-nav" href="frontend.html">FrontEnd Mentor</a>
-      <a class="links-nav" class="links-nav" href="codewell.html">Codewell</a>
-      <a class="links-nav" class="links-nav" href="react.html">React</a>
-      <button id="myBtn" class="btn" >Contact</button>
+        <a class="links-nav"  href="index.html">Home</a>
+      <a class="links-nav"  href="frontend.html">FrontEnd Mentor</a>
+      <a class="links-nav"  href="codewell.html">Codewell</a>
+      <a class="links-nav"  href="react.html">React</a>
+      <button id="myBtn" class="btn btn-mobile" >Contact</button>
       </div>
-      
+    </div>
 
     </nav>
   
@@ -52,18 +55,27 @@
     <p>The languages used in completing these projects included HTML, CSS, JavaScript and React</p>
     <p>Enjoy and please feel free to contact us if you have any questions or need any assitance in your own project.</p>
   </section>
-  <!-- Links to Various Pages -->
-  <section class="links-container">
-    <a href="frontend.html" class="linkToPages">FrontEnd Mentor</a>
-    <a href="codewell.html" class="linkToPages">Codewell</a>
-    <a href="react.html" class="linkToPages">React</a>
-  </section>
+  <!-- Recent Projects -->
+  <section class="recent-section">
+      <h2 class="recent__heading">Recent Projects</h2>
+      <div class="recent-main">
+        <div class="recent-card">
+         <div class="recent-img-card">
+            <img class="recent-img" src="./images/recent/JSM-Nike-Website.png" alt="recent-img">
+          </div>
+        </div>
+        <div class="recent-card">
+           <div class="recent-img-card">
+            <a href="https://28-week-bible-study.vercel.app" target="_blank"><img class="recent-img" src="./images/recent/bibleStudy28Weeks.png" alt="recent-img"></a>
+         </div>
+        </div>
+      </div>
+    </section>
   
-  
-
+ <!-- Modal -->
     
     <section class="modal-section">
-    <!-- Modal -->
+   
     <div id="myModal" class="modal">
       <div class="modal-content">
         <div class="modal-header">

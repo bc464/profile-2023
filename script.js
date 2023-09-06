@@ -1,3 +1,26 @@
+// MOBILE NAVIGATION
+const hamburgerIcon = document.querySelector(".hamburger-icon")
+const closeIcon = document.querySelector(".close-icon")
+const mobileContent = document.getElementById("mobileContent")
+
+
+	hamburgerIcon.addEventListener("click", function() {
+		
+		// mobileContent.display.className(".open")
+		closeIcon.style.display = "block"
+		hamburgerIcon.style.display = "none"
+		
+	})
+	closeIcon.addEventListener("click", function() {
+		
+		// mobileContent.display.className(".open")
+		closeIcon.style.display = "none"
+		hamburgerIcon.style.display = "flex"
+		
+	})
+
+
+
 // MODAL
 let modal = document.getElementById("myModal");
 let btn = document.getElementById('myBtn');
