@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
   
   <link rel="stylesheet" href="style.css">
-  <!-- <script defer src="script.js"></script> -->
+  <script defer src="script.js"></script>
   
 </head>
 <body>
@@ -28,9 +28,20 @@
       <a class="links-nav" class="links-nav" href="react.html">React</a>
       
     </div>
-      <a href="https://www.flaticon.com/free-icons/hamburger" title="Hamburger icons created by Yogs144 - Flaticon"></a>
-      <img class="hamburger-icon open" src="./images/other/hamburger.png" alt="hamburger icon by Andy Horvath"></img>
-      <img class="close-icon close" src="./images/other/close.png" alt="close icon by Chanut"></img>
+       <!-- Mobile Navigation -->
+    <div class="mobile-container">
+      <img src="./images/other/hamburger.png" alt="hamburger-icon" class="mobile-icon hamburger-icon">
+      <img src="./images/other/close.png" alt="hamburger-icon" class="mobile-icon close-icon">
+    
+      
+      <div class="mobile-content">
+        <a class="links-nav"  href="index.html">Home</a>
+      <a class="links-nav"  href="frontend.html">FrontEnd Mentor</a>
+      <a class="links-nav"  href="codewell.html">Codewell</a>
+      <a class="links-nav"  href="react.html">React</a>
+      <button id="myBtn" class="btn btn-mobile" >Contact</button>
+      </div>
+    </div>
 
     </nav>
     <section class="react-code" id="react">
@@ -76,6 +87,56 @@
           src="images/react/React-Food-App.png" 
           alt="React-Food-App" class="react-img"></a>
         </div> 
+      </div>
+    </section>
+    <!-- Modal -->
+    
+    <section class="modal-section">
+   
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times</span>
+          <h2>Contact Information</h2>
+        </div>
+        <div class="modal-body">
+          <form id="signupForm" action="https://formsubmit.co/2b1bd154ceb447f8d4cbd5e8f0dce1ae" method="POST">
+            <div class="form-content">
+              <div class="box flex">
+                <label for="name">name</label><br />
+                  <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    placeholder="name"
+                    required
+                    autocomplete="name"
+                      />
+              </div>
+            </div>
+            <div class="box flex">
+              <label for="email">email</label><br />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  autocomplete="email" placeholder="example@example.com"
+                      />
+            </div>
+            <div class="box flex">
+              <div class="message-text">
+                <label for="message">message</label><br />
+                <textarea name="message" class="message-text-area" placeholder="message"></textarea>
+              </div>
+            </div>
+            <div class="btn-form">
+              <button type="submit" form="signupForm" class="btn-create btn">
+                  Submit
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 

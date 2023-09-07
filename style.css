@@ -49,18 +49,23 @@ footer > a {
 	
 }
 .mobile-content {
-	display: flex;
+	display: none;
 	flex-direction: column;
 	row-gap: 20px;
 	width: 200px;
 	padding: 20px;
 	position: absolute;
-	top: 0px;
-	left: -250px;
+	top: 50px;
+	left: 0px;
 	background-color: #48cae4;
+	z-index: 50;
 }
-.open {
-	left: 0;
+.mobile-content a {
+	text-decoration: none;
+	color: white;
+}
+.mobile-content a:hover {
+	text-decoration: underline;
 }
 .hamburger-icon,
 .close-icon {
